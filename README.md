@@ -7,6 +7,6 @@ Aims: Analyze hydrogen bonding network in a molecular dynamics simulation trajec
 Subject: This protein has a bilobed structure and the ligand binds to the cleft between the two lobes (lobe 1 & lobe 2). The analysis is to identify ALL the possible hydrogen bonding partners between lobe 1 and lobe 2. However, the hydrogen bonds that are mediated by water or ions are not considered.
 
 The analysis consists of three steps:
-1. Use VMD to extract all the hydrogen bonds between lobe 1 and lobe for each frame of the simulation trajectory. This step uses the TCL script "calc_total_num_hbonds_D1D2.tcl";
-2. Use Python to process the data and find the percentage of occurance of hydrogen bonds that appeared in the trajectory. This step uses the Python script "hb_counts_res_D1D2.py";
-3. Assign residue name to the result with "assign_name_hb_res_D1D2.tcl".
+1. Use VMD to extract all the hydrogen bonds between lobe 1 and lobe for each frame of the simulation trajectory. This step uses the TCL script "calc_total_num_hbonds_D1D2.tcl"
+2. Use Python to process the data and find the percentage of occurance of hydrogen bonds that appeared in the trajectory. This step uses the Python script "hb_counts_res_D1D2.py"
+3. Assign residue name to the result with "assign_name_hb_res_D1D2.tcl"
