@@ -8,7 +8,7 @@ Subject: This protein has a bilobed structure and the ligand binds to the cleft 
 
 The analysis consists of three steps:
 * Use VMD to extract all the hydrogen bonds between lobe 1 and lobe for each frame of the simulation trajectory. This step uses the TCL script "calc_hbonds_D1D2.tcl". Example output:
-1 2 {184 127} {183 93}\n
+1 2 {184 127} {183 93}
 2 0 
 3 0 
 4 1 {90 175}
