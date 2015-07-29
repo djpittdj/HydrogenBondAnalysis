@@ -8,6 +8,7 @@ Subject: This protein has a bilobed structure and the ligand binds to the cleft 
 
 The analysis consists of three steps:
 * Use VMD to extract all the hydrogen bonds between lobe 1 and lobe for each frame of the simulation trajectory. This step uses the TCL script "calc_hbonds_D1D2.tcl". Example output:
+
 1 2 {184 127} {183 93}
 
 2 0 
@@ -31,6 +32,7 @@ The analysis consists of three steps:
 The columns represent: simulation frame number, total number of hydrogen bonds; donor-acceptor pairs of hydrogen bonds in a frame.
 
 * Use Python to process the data and find the percentage of occurance of hydrogen bonds that appeared in the trajectory. This step uses the Python script "hb_counts_res_D1D2.py". Example output:
+
 183 93                   	     536   0.594
 
 231 11                   	     237   0.262
@@ -54,6 +56,7 @@ The columns represent: simulation frame number, total number of hydrogen bonds; 
 The columns represent: donor residue ID, acceptor residue ID, number of frames in which this hydrogen bond appear, the percentage of occurance of this hyodrgen bond (i.e., the 3rd column divided by the total number of frames)
 
 * Assign residue name to the result with "assign_name_hb_res_D1D2.tcl"
+
 ARG 183      : GLU 93       :      536   0.594
 
 GLN 231      : GLU 11       :      237   0.262
