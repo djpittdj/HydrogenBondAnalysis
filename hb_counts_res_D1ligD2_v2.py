@@ -28,8 +28,7 @@ for cutoff in [3.0, 3.5, 4.0]:
   counter = Counter(dd).most_common()
   total_num_frames = len(lines)
   print("total_num_frames", total_num_frames)
-  #outfile = open("hb_counts_res_D1ligD2_cut%s.xvg" % cutoff, 'w')
-  outfile = open("test_cut%s.xvg" % cutoff, "w")
+  outfile = open("hb_counts_res_D1ligD2_cut%s.xvg" % cutoff, 'w')
   for one_hb in counter:
     hb = one_hb[0]
     num_hb = int(one_hb[1])
